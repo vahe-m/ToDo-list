@@ -1,0 +1,249 @@
+body {
+	background-image: linear-gradient(to right, #D4F2FD, #fff);
+}
+.background-colors {
+	width: 100px;
+	position: absolute;
+	top: 5%;
+	right: 4%;
+}
+.background-colors button {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #ccc;
+	cursor: pointer;
+}
+.container {
+	max-width: 1024px;
+	margin: 60px auto 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Roboto Mono', monospace;
+}
+.title {
+	font-size: 70px;
+	font-weight: 200;
+}
+.form {
+	width: 450px;
+	position: relative;
+}
+.form input {
+	width: 68.89%;
+	height: 33px;
+	border: none;
+	border-radius: 16px 0 0 16px;
+	padding: 1px 10px;
+	background: #ccc;
+}
+.form input:focus-visible {
+	outline: none;
+}
+.form button {
+	position: absolute;
+	width: 26.67%;
+	height: 35px;
+	border: none;
+	border-radius: 0 16px 16px 0;
+	background: #fff;
+	cursor: pointer;
+}
+
+.date-time {
+	color: #667;
+}
+
+.todo {
+	min-width: 230px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 19px;
+	background: #ccc;
+	padding: 3px 3px;
+	margin-top: 10px;
+}
+.todo p {
+	max-width: 67%;
+	margin: 0;
+	padding: 0 10px;
+	color: #667;
+}
+.todo.task-done {
+	opacity: .4;
+}
+.todo.task-done .todo-text {
+	text-decoration: line-through;
+	opacity: .5;
+}
+.btn_check-trash {
+	width: 70px;
+	display: flex;
+	justify-content: space-evenly;
+}
+.todo span {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+	cursor: pointer;
+}
+.todo i {
+	padding: 5px;
+}
+.check {
+	right: 40px;
+}
+.check.checked {
+	opacity: .5;
+	cursor: default;
+}
+.trash {
+	right: 6px;
+}
+
+/*-- weak mode --*/
+.weak-mode-btn {
+	background-image: linear-gradient(to right, #535456, #0b3040);
+}
+.weak-mode-body {
+	background-image: linear-gradient(to right, #535456, #0b3040);
+}
+.weak-mode-body .title {
+	color: #FDDFDC;
+}
+.weak-mode-body .form input {
+	background: #181A19;
+	color: #fff;
+}
+.weak-mode-body .form button {
+	background: #FDDFDC;
+	color: #000;
+}
+.weak-mode-body .date-time {
+	color: #ccc;
+}
+.weak-mode-body .todo {
+	background: #181A19;
+	color: #fff;
+}
+.weak-mode-body .todo-text {
+	color: #ccc;
+}
+.weak-mode-body .check {
+	background: #FDDFDC;
+}
+.weak-mode-body .trash {
+	background: #FDDFDC;	
+}
+.weak-mode-body .check i {
+	color: #000;
+}
+.weak-mode-body .trash i {
+	color: #000;
+}
+
+/*-- light mdoe --*/
+.light-mode-btn {
+	background-image: linear-gradient(to right, #D4F2FD, #fff);
+}
+.light-mode-body {
+	background-image: linear-gradient(to right, #D4F2FD, #fff);
+}
+.light-mode-body .title {
+	color: #000;
+}
+.light-mode-body .form input {
+	background: #ccc;
+	color: #000;
+}
+.light-mode-body .form button {
+	background: #fff;
+	color: #000;
+}
+.light-mode-body .date-time {
+	color: #667;
+}
+.light-mode-body .todo {
+	background: #ccc;
+	color: #000;
+}
+.light-mode-body .todo-text {
+	color: #667;
+}
+.light-mode-body .check {
+	background: #fff;
+}
+.light-mode-body .trash {
+	background: #fff;	
+}
+
+/*-- dark mode --*/
+.dark-mode-btn {
+	background-image: linear-gradient(to right, #001214, #011f29);
+}
+.dark-mode-body {
+	background-image: linear-gradient(to right, #001214, #011f29);
+}
+.dark-mode-body .title {
+	color: #fff;
+}
+.dark-mode-body .form input {
+	background: #00394C;
+	color: #fff;
+}
+.dark-mode-body .form button {
+	background: #002835;
+	color: #fff;
+}
+.dark-mode-body .date-time {
+	color: #ccc;
+}
+.dark-mode-body .todo {
+	background: #00394c;
+	color: #fff;
+}
+.dark-mode-body .todo-text {
+	color: #ccc;
+}
+.dark-mode-body .check {
+	background: #002835;
+}
+.dark-mode-body .trash {
+	background: #002835;	
+}
+
+@media only screen and (max-width: 1024px) {
+	.container {
+		max-width: 770px;
+	}
+}
+
+@media only screen and (max-width: 770px) {
+	.container {
+		max-width: 480px;
+	}
+	.title {
+		font-size: 48px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.container {
+		max-width: 320px;
+	}
+	.title {
+		font-size: 37px;
+	}
+	.form {
+		width: 270px;
+	}
+	.form button {
+		font-size: 12px;
+	}
+}
